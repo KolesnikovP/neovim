@@ -12,18 +12,3 @@ vim.keymap.set('n', 'gr', builtin.lsp_references,
                {noremap = true, silent = true})
 vim.keymap.set('n', 'gd', builtin.lsp_definitions,
                {noremap = true, silent = true})
--- require('telescope').setup({
---     defaults = {
---         mappings = {
---             i = {
---                 ["<C-n>"] = require('telescope.actions').move_selection_next,
---                 ["<C-p>"] = require('telescope.actions').move_selection_previous,
---             }
---         }
---     },
---     pickers = {
---         find_files = {
---             on_input_filter_cb = nil,  -- Avoid triggering events
---         }
---     }
--- })
